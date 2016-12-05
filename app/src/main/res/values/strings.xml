@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">管理系统</string>
+    <string name="ok">添加</string>
+    <string name="cancel">取消</string>
+    <string name="title_alert">标题</string>
+    <string name="role_user_name">你的名字</string>
+    <string name="idtxthint">用户名</string>
+    <string name="pwdtxthint">密码</string>
+    <string name="forgot_pwd">忘记密码？</string>
+    <string name="loginbtntext">登录</string>
+</resources>

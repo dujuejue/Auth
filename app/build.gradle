@@ -1,0 +1,30 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "24.0.2"
+
+    defaultConfig {
+        applicationId "com.example.aator.auth"
+        minSdkVersion 14
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:25.0.0'
+    compile files('libs/jcifs-1.3.17.jar')
+    compile files('libs/ksoap2-android-assembly-3.6.0-jar-with-dependencies.jar')
+    compile files('libs/ksoap2-extra-ntlm-3.6.0.jar')
+    compile files('libs/mpandroidchartlibrary-2-1-6.jar')
+}
